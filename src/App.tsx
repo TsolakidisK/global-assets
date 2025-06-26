@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from 'react';
-import { 
-  TrendingUp, 
-  Home, 
-  Coins, 
-  Bitcoin, 
-  Gem, 
-  Wheat, 
-  Building2, 
+import {
+  TrendingUp,
+  Home,
+  Coins,
+  Bitcoin,
+  Gem,
+  Wheat,
+  Building2,
   PieChart,
   Search,
   Filter
@@ -126,7 +126,7 @@ function App() {
   const renderSquares = (count: number, color: string) => {
     const squares = [];
     const maxSquaresPerRow = 20;
-    
+
     for (let i = 0; i < count; i++) {
       squares.push(
         <div
@@ -135,7 +135,7 @@ function App() {
         />
       );
     }
-    
+
     return (
       <div className="grid grid-cols-20 gap-1 max-w-full overflow-hidden">
         {squares}
@@ -153,13 +153,13 @@ function App() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold text-white mb-2">
-                Global Asset Classes
+                Global Asset Classes Konsti
               </h1>
               <p className="text-slate-300">
                 Each square represents $100 billion • Total: {formatValue(totalValue)}
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-3">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-4 h-4" />
@@ -171,7 +171,7 @@ function App() {
                   className="pl-10 pr-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
-              
+
               <div className="relative">
                 <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-4 h-4" />
                 <select
@@ -226,7 +226,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Visualization */}
               <div className="mt-6 p-4 bg-black/20 rounded-xl">
                 <div className="flex flex-wrap gap-1">
