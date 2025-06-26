@@ -153,7 +153,7 @@ function App() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold text-white mb-2">
-                Global Asset Classes Konsti
+                Global Asset Classes
               </h1>
               <p className="text-slate-300">
                 Each square represents $100 billion • Total: {formatValue(totalValue)}
